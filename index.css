@@ -1,0 +1,221 @@
+*{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+header nav div > *{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding-left: 40px;
+}
+/* header nav div{
+    padding: 0px;
+} */
+header nav img{
+    width: 40px;
+}
+
+header nav div button{
+    border: 0px;
+    margin-left: 40px;
+    background-color: orange;
+    padding: 25px;
+}
+header nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+#search button{
+    padding-right: 40px;
+    padding: 25px;
+    background-color: white;
+}
+
+.linear-gradient-background{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0px;
+    margin: 0px;
+    color: white;
+    background: linear-gradient(
+        to right,
+        orange,
+        rgb(255, 131, 48),
+        rgb(231, 5, 231),
+        rgb(182, 2, 182),
+        purple
+
+    );
+}
+.linear-gradient-background div img{
+    width: 28px;
+    filter: invert();
+    height: auto;   
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+.flex div{
+    margin-left: 12px;
+}
+
+.linear-gradient-background div button{
+    background: transparent;
+    color: white;
+    border-radius: 20px;
+    border: 2px solid white;
+    padding:6px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin: 8px;
+}
+
+.linear-gradient-background div > *:hover{
+    cursor: pointer;
+}
+h4{
+    margin: 0px;
+}
+#home{
+    margin: 0px;
+    margin-left: 25px;
+    background-image: url(assets/meeting.jpeg);
+    background-repeat: no-repeat;
+    width: 100%;
+    opacity: 0.8;
+    height: 600px;
+    padding-left: 4px;
+    display: flex;
+    align-items: center;
+}
+
+#home-content{
+    color: white;
+    padding-bottom: 4px;
+    margin-right: 6%;
+}
+
+#gradient-line{
+    height: 200px;
+    color: transparent !important;
+    margin-left: 15%;
+    background-image: linear-gradient(
+        to bottom,
+        orange,
+        rgb(255, 131, 48),
+        rgb(231, 5, 231),
+        rgb(182, 2, 182),
+        purple
+
+    );
+}
+
+
+.gradient-btn{
+    padding: 4px 12px 4px 12px;
+    border: 2px solid transparent;
+    border-radius: 14px;
+    background-image: linear-gradient(
+        to right,
+        orange,
+        rgb(255, 131, 48),
+        rgb(231, 5, 231),
+        rgb(182, 2, 182),
+        purple
+        );
+        color:white;
+        opacity: 0.9;
+    }
+    
+    #empty-btn{
+        padding: 4px 12px 4px 12px;
+        background-color: transparent;
+        color: rgb(255, 255, 255);
+        border: 2px solid black;
+        border-radius: 14px;
+
+
+}
+
+.home-end{
+    margin: 35px 45px 35px 0px;
+
+}
+
+.home-end p{
+    line-height: 2px;
+    font-size: small;
+}
+
+.home-flex{
+    display: flex;
+    justify-items: space-evenly;
+    align-items: center;
+}
+
+#about-section{
+    background-image: url(assets/worldmap.png);
+    height: 400px;
+}
+.about{
+    padding-top: 5%;
+}
+
+#about-text{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#services{
+    padding-top: 5%;
+    padding-left: 5%;
+    background-color: rgb(226, 226, 226);
+    color: black;
+}
+
+.gradient-line{
+    width: 25%;
+    color: transparent;
+    font-size: 2px;
+    background-image: linear-gradient(
+        to right,
+        orange,
+        rgb(255, 131, 48),
+        rgb(231, 5, 231),
+        rgb(182, 2, 182),
+        purple
+    );
+}
+.container{
+    margin-top: 4%;
+}
+.card{
+    width: 30%;
+}
+
+.card-img{
+    border-radius: 100%;
+    width: 40px;
+    background-image: linear-gradient(
+        to right,
+        orange,
+        rgb(255, 131, 48),
+        rgb(231, 5, 231),
+        rgb(182, 2, 182),
+        purple
+    );
+}
+
+.image-connect{
+    background-color: white;
+    color: red;
+}
