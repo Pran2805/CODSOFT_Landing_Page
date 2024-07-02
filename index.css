@@ -5,6 +5,11 @@
 body{
     margin: 0px;
     padding: 0px;
+    background-color: rgb(226, 226, 226);
+}
+
+.nav-style{
+    cursor: pointer;
 }
 
 header nav div > *{
@@ -24,14 +29,18 @@ header nav div button{
     border: 0px;
     margin-left: 40px;
     background-color: orange;
+    cursor: pointer;
     padding: 25px;
+    padding-bottom: 27px;
 }
 header nav{
     display: flex;
     justify-content: space-evenly;
+    background-color: white;
 }
 #search button{
     padding-right: 40px;
+    cursor: pointer;
     padding: 25px;
     background-color: white;
 }
@@ -45,10 +54,8 @@ header nav{
     background: linear-gradient(
         to right,
         orange,
-        rgb(255, 131, 48),
         rgb(231, 5, 231),
-        rgb(182, 2, 182),
-        purple
+        rgb(216, 3, 216)
 
     );
 }
@@ -90,6 +97,9 @@ h4{
     margin-left: 25px;
     background-image: url(assets/meeting.jpeg);
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
     width: 100%;
     opacity: 0.8;
     height: 600px;
@@ -98,10 +108,16 @@ h4{
     align-items: center;
 }
 
+
 #home-content{
     color: white;
     padding-bottom: 4px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    filter: blur(-100px);
+
     margin-right: 6%;
+    
+    
 }
 
 #gradient-line{
@@ -111,39 +127,72 @@ h4{
     background-image: linear-gradient(
         to bottom,
         orange,
-        rgb(255, 131, 48),
         rgb(231, 5, 231),
-        rgb(182, 2, 182),
-        purple
-
+        rgb(216, 3, 216)
     );
 }
 
 
 .gradient-btn{
-    padding: 4px 12px 4px 12px;
+    padding: 6px 12px;
     border: 2px solid transparent;
     border-radius: 14px;
     background-image: linear-gradient(
-        to right,
-        orange,
-        rgb(255, 131, 48),
+         to right,
+        rgb(255, 165, 0),
         rgb(231, 5, 231),
-        rgb(182, 2, 182),
-        purple
-        );
-        color:white;
-        opacity: 0.9;
+        rgb(216, 3, 216)
+    );
+    border: 0;
+    color: white;
+    opacity: 0.9;
+    cursor: pointer; 
+    text-decoration: none; 
+    text-align: center;
+    transition: opacity 0.3s;
+    display: inline-block;
+
     }
     
-    #empty-btn{
-        padding: 4px 12px 4px 12px;
-        background-color: transparent;
-        color: rgb(255, 255, 255);
-        border: 2px solid black;
-        border-radius: 14px;
+.gradient-btn:hover{
+    outline: none;
+    background-image: linear-gradient(
+    to right,
+    rgb(252, 179, 43),
+    rgb(250, 20, 250),
+    rgb(255, 4, 255)
+  );
+}
+.gradient-btn:active{
+    outline: none;
+    background-image: linear-gradient(
+    to right,
+    rgba(252, 171, 22, 0.9),
+    rgba(253, 3, 253, 0.9),
+    rgba(231, 3, 231, 0.9)
+  );
+}
 
 
+
+#empty-btn{
+    padding: 4px 12px 4px 12px;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    border: 2px solid white;
+    cursor: pointer;
+    border-radius: 14px;
+}
+
+#empty-btn:hover{
+    background-color: gray;
+    color: white;
+    border-color: black;
+}
+
+#empty-btn:active{
+    color:rgba(255, 255, 255, 0.795);
+    background-color: rgb(177, 177, 177);
 }
 
 .home-end{
@@ -189,17 +238,19 @@ h4{
     background-image: linear-gradient(
         to right,
         orange,
-        rgb(255, 131, 48),
         rgb(231, 5, 231),
-        rgb(182, 2, 182),
-        purple
-    );
+        rgb(216, 3, 216) 
+        );
 }
 .container{
     margin-top: 4%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 15%;
+    margin-left: -100px;
 }
 .card{
-    width: 30%;
+    width: max-content;
 }
 
 .card-img{
@@ -208,14 +259,36 @@ h4{
     background-image: linear-gradient(
         to right,
         orange,
-        rgb(255, 131, 48),
         rgb(231, 5, 231),
-        rgb(182, 2, 182),
-        purple
+        rgb(216, 3, 216)
     );
+   position: relative;
+   right: 7px;
+    
 }
-
+.image-container{
+    position: relative;
+}
+.main-image{
+    position:absolute;
+}
 .image-connect{
     background-color: white;
-    color: red;
+    font: bold;
+    width: fit-content;
+    border-radius: 15% 5% 5% 15%;
+    position: relative;
+    top: 150px;
+    left: 77px;
+    background-color: white;  
+    
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
 }
+.image-text{
+    padding-right: 40px;
+}
+#image-text{
+padding-right: 5px;
+}
+

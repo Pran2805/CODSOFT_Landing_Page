@@ -49,12 +49,12 @@
                 <h1>Landing Page</h1>
             </div>
             <div>
-                <a href="">Home</a>
-                <label for="Blog">Blog</label>
-                <label for="Page">Page</label>
-                <a href="">Services</a>
-                <a href="">Testimonials</a>
-                <a href="">Contact</a>
+                <a href="" class="nav-style">Home</a>
+                <label for="Blog" class="nav-style">Blog</label>
+                <label for="Page" class="nav-style">Page</label>
+                <a href="" class="nav-style">Services</a>
+                <a href="" class="nav-style">Testimonials</a>
+                <a href="" class="nav-style">Contact</a>
                 <button class="nav-content">Buy Now</button>
             </div>
 
@@ -72,6 +72,7 @@
             </div>
 
             <div id="home-content">
+                <!-- <div class="glass">fdsi</div> -->
                 <h4>We are Creative</h4>
                 <h2>Creative Digital Agency</h2>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab optio deserunt assumenda minima
@@ -143,23 +144,60 @@
         <div class="container">
 
             <div class="card">
-                <div>
-                    <img src="assets/userExperience.jpeg" alt="">
+                <div class="image-container">
+                    <img src="assets/userExperience.jpeg" alt="" class="main-image">
                 </div>
                 <div>
-                    <div class="card-btn">
-                        <div class="flex">
-                            <img src="assets/announcement.png" class="card-img">
 
-                            <div class="image-connect">
-                                User Experience
-                            </div>
+                    <div class="flex image-connect">
+                        <img src="assets/announcement.png" class="card-img">
+                        <div class="image-text">
+                            User Experience
                         </div>
                     </div>
+
                 </div>
             </div>
+
+            <!-- second  image  -->
+
+            <div class="card">
+                <div>
+                    <img src="assets/programmer.jpeg" alt="" width="270px" height="190px" class="main-image">
+                </div>
+                <div>
+                    <div class="flex image-connect">
+                        <img src="assets/creative-design.png" class="card-img">
+                        <div class="image-text">
+                            Creative Design
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- third image  -->
+
+            <div class="card">
+                <div>
+                    <img src="assets/customer.jpeg" alt="" width="275px" height="190px" class="main-image">
+                </div>
+                <div>
+                    <div class="flex image-connect">
+                        <img src="assets/review.jpg" class="card-img">
+
+                        <div id="image-text">
+                            Customer Satisfaction
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
         </div>
     </section>
+
+
 
 
 </body>
